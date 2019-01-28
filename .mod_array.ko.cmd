@@ -1,0 +1,1 @@
+cmd_/home/debian/DD/mod_array/mod_array.ko := ld -EL -r  -T /usr/src/linux-headers-3.8.13-bone81/scripts/module-common.lds --build-id  -o /home/debian/DD/mod_array/mod_array.ko /home/debian/DD/mod_array/mod_array.o /home/debian/DD/mod_array/mod_array.mod.o
