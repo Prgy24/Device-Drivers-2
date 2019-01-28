@@ -1,7 +1,8 @@
-obj-m := Hello.o
-	KERNELDIR =/lib/modules/$(shell uname -r)/build
-	PWD :=$(shell pwd)
+obj-m := mod_param.o
+        KERNELDIR =/lib/modules/$(shell uname -r)/build
+        PWD :=$(shell pwd)
 
-default:
+main:
 	$(MAKE) -C $(KERNELDIR) M=$(PWD) modules
 
+      

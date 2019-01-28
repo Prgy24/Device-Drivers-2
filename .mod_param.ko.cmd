@@ -1,0 +1,1 @@
+cmd_/home/debian/DD/mod_param/mod_param.ko := ld -EL -r  -T /usr/src/linux-headers-3.8.13-bone81/scripts/module-common.lds --build-id  -o /home/debian/DD/mod_param/mod_param.ko /home/debian/DD/mod_param/mod_param.o /home/debian/DD/mod_param/mod_param.mod.o
