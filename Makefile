@@ -1,8 +1,8 @@
-obj-m := mod_param.o
-        KERNELDIR =/lib/modules/$(shell uname -r)/build
-        PWD :=$(shell pwd)
+obj-m=interrupt.o
+KERN_DIR=/lib/modules/$(shell uname -r)/build
+PWD=$(shell pwd)
 
-main:
-	$(MAKE) -C $(KERNELDIR) M=$(PWD) modules
-
-      
+modules:
+	$(MAKE) -C ${KERN_DIR} M=${PWD} modules
+clean:
+	$(MAKE) -C ${KERN_DIR} M=${PWD} clean

@@ -1,0 +1,1 @@
+cmd_/home/debian/DD/test_interrupt/interrupt.ko := ld -EL -r  -T /usr/src/linux-headers-3.8.13-bone81/scripts/module-common.lds --build-id  -o /home/debian/DD/test_interrupt/interrupt.ko /home/debian/DD/test_interrupt/interrupt.o /home/debian/DD/test_interrupt/interrupt.mod.o
